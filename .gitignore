@@ -37,3 +37,4 @@ Thumbs.db
 # Backup
 *.backup
 *.bak
+# Workflow triggered with OIDC
