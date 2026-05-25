@@ -64,13 +64,13 @@ module "eks" {
 
   eks_managed_node_groups = {
     primary = {
-      name            = "primary-node-group"
-      instance_types  = ["t3.small"]
-      capacity_type   = "ON_DEMAND"
-      min_size        = 1
-      max_size        = 3
-      desired_size    = 2
-      disk_size       = 30
+      name           = "primary-node-group"
+      instance_types = ["t3.small"]
+      capacity_type  = "ON_DEMAND"
+      min_size       = 1
+      max_size       = 3
+      desired_size   = 2
+      disk_size      = 30
 
       tags = {
         NodeGroup = "primary"
@@ -78,13 +78,13 @@ module "eks" {
     }
 
     secondary = {
-      name            = "secondary-node-group"
-      instance_types  = ["t3.small"]
-      capacity_type   = "ON_DEMAND"
-      min_size        = 1
-      max_size        = 2
-      desired_size    = 1
-      disk_size       = 30
+      name           = "secondary-node-group"
+      instance_types = ["t3.small"]
+      capacity_type  = "ON_DEMAND"
+      min_size       = 1
+      max_size       = 2
+      desired_size   = 1
+      disk_size      = 30
 
       tags = {
         NodeGroup = "secondary"
